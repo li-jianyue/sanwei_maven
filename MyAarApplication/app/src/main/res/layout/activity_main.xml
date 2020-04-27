@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_play_pdf"
+        android:textSize="@dimen/sp_17"
+        android:text="pdf启动" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/tv_play_epub"
+        android:textSize="@dimen/sp_17"
+        android:text="epub启动" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/tv_play_vedio"
+        android:textSize="@dimen/sp_17"
+        android:text="视频启动" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/tv_xx_webview"
+        android:textSize="@dimen/sp_17"
+        android:text="学习" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/tv_se_webview"
+        android:textSize="@dimen/sp_17"
+        android:text="少儿" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/tv_ks_webview"
+        android:textSize="@dimen/sp_17"
+        android:text="看书" />
+
+</LinearLayout>

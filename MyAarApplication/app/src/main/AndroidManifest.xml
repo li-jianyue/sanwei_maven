@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cnki.myaarapplication">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <application
+        android:name=".MyDemoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme">
+        <!--ActiveAndroid数据库配置信息-->
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="sanweiroom.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+        <!--ActiveAndroid数据库配置信息-->
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.cnki.mybookepubrelease.model.DownLoadHistory"/>
+
+        <!--authorities注意换成自己的包名-->
+        <provider
+            android:name="com.huangfei.library.activeandroid.content.ContentProvider"
+            android:authorities="${applicationId}"
+            android:enabled="true"
+            android:exported="false">
+        </provider>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <!--动态申请权限-->
+        <activity android:name=".PermissionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".VedioPlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".WebViewActivity" />
+    </application>
+
+</manifest>
