@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.koolearn.android.kooreader.MainMenuWindow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_toppanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@color/home_title"
+    android:focusable="false"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    android:visibility="visible">
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/tv_back"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/selector_capture_back"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_addnote"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:text="添加书签"/>
+</com.koolearn.android.kooreader.MainMenuWindow>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EpubTest</string>
+    <string name="tips_not_wifi">You are currently using the mobile network, the player will continue to consume traffic</string>
+    <string name="tips_not_wifi_confirm">Resume</string>
+    <string name="tips_not_wifi_cancel">Stop play</string>
+    <string name="no_url">No url</string>
+    <string name="replay">Replay</string>
+    <string name="click_to_restart">Click to try again</string>
+    <string name="video_loading_failed">Video loading failed</string>
+    <string name="local_book">本地图书</string>
+    <string name="network_book">在线图书</string>
+    <string name="book_note">我的笔记</string>
+    <string name="book_mark">我的书签</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="pdfvp_ready_to_download">Ready to download</string>
+    <string name="book_title_1">失控</string>
+    <string name="book_description_1">作者: [美] 凯文·凯利 \n出版年: 2010-12 \n页数: 707 \n定价: 88.00元 </string>
+
+    <string name="search">搜索</string>
+    <string name="input_hint">请输入关键字</string>
+    <string name="input_prefill"></string>
+    <string name="default_search_keyword">哈利</string>
+    <string name="transition_book_img">transition_book_img</string>
+    <string name="no_net_and_check">网络未连接</string>
+
+    <string name="try_to_load">努力加载中...</string>
+    <string name="empty_string"></string>
+
+    <string name="asset_on_sd">Asset on SD card example</string>
+</resources>
